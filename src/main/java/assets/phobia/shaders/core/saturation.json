@@ -1,0 +1,19 @@
+{
+    "vertex": "phobia:saturation_vertex",
+    "fragment": "phobia:saturation_fragment",
+    "samplers": [
+        {
+            "name": "Sampler0"
+        }
+    ],
+    "uniforms": [
+        {
+            "name": "SaturationData",
+            "type": "float",
+            "count": 1,
+            "values": [
+                1.0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+  "targets": {
+    "phobia_core": {},
+    "phobia_glow": {},
+    "phobia_blur": {}
+  },
+  "passes": [
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "phobia:post/shaderesp_edge",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:entity_outline"
+        }
+      ],
+      "output": "phobia_core"
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "phobia:post/shaderesp_blur",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "phobia_core",
+          "bilinear": true
+        }
+      ],
+      "output": "phobia_glow",
+      "uniforms": {
+        "BlurConfig": [
+          {
+            "name": "Direction",
+            "type": "vec2",
+            "value": [1.0, 0.0]
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "phobia:post/shaderesp_blur",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "phobia_glow",
+          "bilinear": true
+        }
+      ],
+      "output": "phobia_blur",
+      "uniforms": {
+        "BlurConfig": [
+          {
+            "name": "Direction",
+            "type": "vec2",
+            "value": [0.0, 1.0]
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "phobia:post/shaderesp_composite",
+      "inputs": [
+        {
+          "sampler_name": "Core",
+          "target": "phobia_core"
+        },
+        {
+          "sampler_name": "Glow",
+          "target": "phobia_blur",
+          "bilinear": true
+        }
+      ],
+      "output": "minecraft:entity_outline"
+    }
+  ]
+}

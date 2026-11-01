@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "accessWidener": "phobia.accesswidener",
+  "id": "phobia",
+  "version": "1.0.0",
+  "name": "phobia",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/phobia/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ruhack.phobia.Initialization"
+    ]
+  },
+  "mixins": [
+    "phobia.mixins.json"
+  ],
+  "jars": [
+    {
+      "file": "META-INF/jars/baritone-standalone-fabric-1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/nether-pathfinder-1.4.1.jar"
+    },
+    {
+      "file": "META-INF/jars/figura-0.1.5+1.21.11-fabric-mc.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-codec-socks-4.1.82.Final.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-handler-proxy-4.1.82.Final.jar"
+    }
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.18.4",
+    "minecraft": "~1.21.11",
+    "java": "\u003e\u003d21",
+    "fabric-api": "*",
+    "figura": "*"
+  }
+}

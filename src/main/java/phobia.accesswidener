@@ -1,0 +1,30 @@
+accessWidener	v1	intermediary
+accessible	field	net/minecraft/class_1297	field_5964	Lit/unimi/dsi/fastutil/objects/Object2DoubleMap;
+accessible	field	net/minecraft/class_1297	field_25599	Ljava/util/Set;
+accessible	field	net/minecraft/class_1309	field_6228	I
+accessible	field	net/minecraft/class_1309	field_6282	Z
+accessible	field	net/minecraft/class_1297	field_18065	Lnet/minecraft/class_4048;
+accessible	field	net/minecraft/class_337	field_2060	Ljava/util/Map;
+accessible	method	net/minecraft/class_743	method_40218	(ZZ)F
+accessible	method	net/minecraft/class_310	method_1583	()V
+accessible	method	net/minecraft/class_310	method_1536	()Z
+accessible	field	net/minecraft/class_636	field_3716	I
+accessible	method	net/minecraft/class_922	method_4046	(Lnet/minecraft/class_3887;)Z
+accessible	field	net/minecraft/class_310	field_1752	I
+accessible	method	net/minecraft/class_636	method_41931	(Lnet/minecraft/class_638;Lnet/minecraft/class_7204;)V
+mutable	field	net/minecraft/class_243	field_1352	D
+mutable	field	net/minecraft/class_243	field_1351	D
+mutable	field	net/minecraft/class_243	field_1350	D
+accessible	method	net/minecraft/class_437	method_37063	(Lnet/minecraft/class_364;)Lnet/minecraft/class_364;
+accessible	method	net/minecraft/class_1297	method_18795	(Lnet/minecraft/class_243;FF)Lnet/minecraft/class_243;
+accessible	method	net/minecraft/class_1297	method_31482	()V
+accessible	field	net/minecraft/class_1297	field_26996	Lnet/minecraft/class_5569;
+accessible	field	net/minecraft/class_2824	field_12870	I
+accessible	field	net/minecraft/class_1796	field_8024	Ljava/util/Map;
+accessible	field	net/minecraft/class_1796	field_8025	I
+accessible	class	net/minecraft/class_1796$class_1797
+accessible	field	net/minecraft/class_1921	field_64013	Lnet/minecraft/class_12247;
+accessible	method	net/minecraft/class_1921	method_75940	(Ljava/lang/String;Lnet/minecraft/class_12247;)Lnet/minecraft/class_1921;
+accessible	field	net/minecraft/class_12247	field_63987	Ljava/util/Map;
+accessible	class	net/minecraft/class_12247$class_12338
+accessible	field	net/minecraft/class_12247$class_12338	comp_5228	Lnet/minecraft/class_2960;
