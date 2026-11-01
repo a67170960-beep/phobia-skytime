@@ -12,7 +12,7 @@ import ruhack.phobia.util.rotation.angle.Angle;
 import ruhack.phobia.util.rotation.mod.AngleUtil;
 
 public class SkyTimeSmooth extends AngleSmoothMode {
-   private final Random random = new Random(0x5A71F1MEL ^ System.nanoTime());
+   private final Random random = new Random(0x5A71F1L ^ System.nanoTime());
    private float yawVel, pitchVel, noiseYaw, noisePitch, wanderYaw, wanderPitch, speedDrift;
    private int reactionTicks, postHitTicks, combatTicks, lastAttackCount = -1, lastEntityId = Integer.MIN_VALUE;
    private float lastStepYaw, lastStepPitch;
